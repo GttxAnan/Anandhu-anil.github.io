@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anandhu Anil | Senior Java Backend Engineer</title>
+  <meta name="description" content="Senior Java Backend Engineer with 3.7+ years building high-throughput data ingestion, event-driven pipelines, IoT telemetry on AWS, and Spring Boot microservices.">
+  <meta name="keywords" content="Anandhu Anil, Backend Engineer, Java, Spring Boot, AWS, IoT, Kafka, Kinesis, Microservices, Distributed Systems">
+  <meta name="author" content="Anandhu Anil">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://anandhu-anil.github.io/">
+  <meta property="og:title" content="Anandhu Anil | Senior Java Backend Engineer">
+  <meta property="og:description" content="Engineering high-throughput distributed systems, event-driven pipelines, and IoT telemetry architectures.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/198800964?v=4">
+
+  <!-- Google Fonts: Inter & JetBrains Mono & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Anandhu.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut nav-icon"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group nav-icon"></i> Tech Stack</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Experience</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-cubes nav-icon"></i> Projects</a>
+        <a href="#architecture" class="nav-link"><i class="fa-solid fa-terminal nav-icon"></i> Terminal</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane nav-icon"></i> Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1coSFkTH9r_Y4HR1JntJ3ZJCnVujHlA3f/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle color theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot pulse"></span>
+            <span class="status-text">Open to Backend & Distributed Systems Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting <span class="text-gradient">High-Throughput</span> Distributed Systems & IoT Pipelines.
+          </h1>
+
+          <p class="hero-subtitle">
+            Hi, I'm <strong>Anandhu Anil</strong> — a Senior Java Backend Engineer with <strong>3.7+ years</strong> of production experience building high-concurrency event-driven data ingestion, Spring Boot microservices, and petabyte-scale IoT telemetry architectures on AWS.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="https://github.com/GttxAnan" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/anandhu-anil" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="hero-tech-pills">
+            <span class="tech-pill"><i class="fa-brands fa-java"></i> Java 17/21</span>
+            <span class="tech-pill"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+            <span class="tech-pill"><i class="fa-brands fa-aws"></i> AWS Cloud</span>
+            <span class="tech-pill"><i class="fa-solid fa-diagram-project"></i> Kafka & Kinesis</span>
+            <span class="tech-pill"><i class="fa-solid fa-shield-halved"></i> mTLS / OAuth2</span>
+            <span class="tech-pill"><i class="fa-solid fa-chart-line"></i> Prometheus & Grafana</span>
+          </div>
+        </div>
+
+        <!-- Telemetry & Live System Architecture Widget -->
+        <div class="hero-widget">
+          <div class="telemetry-card">
+            <div class="card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-title">
+                <i class="fa-solid fa-server"></i> system-telemetry.service (active)
+              </div>
+              <div class="live-tag">
+                <span class="live-dot"></span> LIVE
+              </div>
+            </div>
+            
+            <div class="telemetry-body">
+              <!-- Metrics Grid -->
+              <div class="telemetry-grid">
+                <div class="telemetry-item">
+                  <div class="item-label">Concurrent IoT Devices</div>
+                  <div class="item-value" id="val-devices">500,000+</div>
+                  <div class="item-sub">VerneMQ · AWS IoT Core</div>
+                </div>
+
+                <div class="telemetry-item">
+                  <div class="item-label">Command Reliability</div>
+                  <div class="item-value highlight-cyan" id="val-uptime">99.9%</div>
+                  <div class="item-sub">mTLS · Shadows · Auto-Rollback</div>
+                </div>
+
+                <div class="telemetry-item">
+                  <div class="item-label">MTTR Reduction</div>
+                  <div class="item-value highlight-emerald" id="val-mttr">-35%</div>
+                  <div class="item-sub">Prometheus · Grafana Alerts</div>
+                </div>
+
+                <div class="telemetry-item">
+                  <div class="item-label">Unit Test Coverage</div>
+                  <div class="item-value highlight-purple" id="val-coverage">85%+</div>
+                  <div class="item-sub">JUnit 5 · Mockito · TDD</div>
+                </div>
+              </div>
+
+              <!-- Live Ingestion Stream Simulator -->
+              <div class="stream-monitor">
+                <div class="stream-header">
+                  <span><i class="fa-solid fa-bolt"></i> Live Event Stream Ingestion</span>
+                  <span class="stream-rate" id="stream-rate">~48,200 msg/sec</span>
+                </div>
+                <div class="stream-visualizer" id="stream-visualizer">
+                  <div class="bar" style="height: 65%;"></div>
+                  <div class="bar" style="height: 80%;"></div>
+                  <div class="bar" style="height: 45%;"></div>
+                  <div class="bar" style="height: 90%;"></div>
+                  <div class="bar" style="height: 70%;"></div>
+                  <div class="bar" style="height: 85%;"></div>
+                  <div class="bar" style="height: 60%;"></div>
+                  <div class="bar" style="height: 95%;"></div>
+                  <div class="bar" style="height: 75%;"></div>
+                  <div class="bar" style="height: 88%;"></div>
+                  <div class="bar" style="height: 62%;"></div>
+                  <div class="bar" style="height: 82%;"></div>
+                  <div class="bar" style="height: 78%;"></div>
+                  <div class="bar" style="height: 91%;"></div>
+                  <div class="bar" style="height: 68%;"></div>
+                </div>
+              </div>
+
+              <!-- Terminal Mini Log snippet -->
+              <div class="mini-log">
+                <div class="log-line"><span class="log-ts">[OK]</span> AWS Kinesis & Firehose buffer sync: <span class="log-green">HEALTHY</span></div>
+                <div class="log-line"><span class="log-ts">[OK]</span> Protobuf decoder worker pool: <span class="log-cyan">0 overhead</span></div>
+                <div class="log-line"><span class="log-ts">[OK]</span> Athena real-time queries: <span class="log-purple">&lt; 350ms latency</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Highlight Bar -->
+    <section class="metrics-bar-section">
+      <div class="container">
+        <div class="metrics-bar">
+          <div class="metric-block">
+            <div class="metric-num">3.7+</div>
+            <div class="metric-desc">Years Engineering Experience</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-block">
+            <div class="metric-num">500k+</div>
+            <div class="metric-desc">Concurrent Connected Devices</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-block">
+            <div class="metric-num">10k+</div>
+            <div class="metric-desc">Connected Fleet Vehicles Managed</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-block">
+            <div class="metric-num">60%</div>
+            <div class="metric-desc">Manual Analytics Effort Reduced</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">01. ABOUT ME</div>
+          <h2 class="section-title">Engineering at the Intersection of Reliability & High Concurrency</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-intro">
+              <p>
+                I am a <strong>Senior Java Backend Engineer</strong> based in Bengaluru, India. Over the past 3.7+ years, I have specialized in building robust microservices architectures, low-latency streaming pipelines, and secure IoT device management systems.
+              </p>
+              <p>
+                At <strong>Tata Elxsi</strong>, I design distributed telemetry processing pipelines handling millions of connected vehicle events daily, architect Protobuf decoding layers in Java & AWS Lambda, and implement end-to-end observability using Prometheus and Grafana.
+              </p>
+              <p>
+                Whether it is reducing API response times through Hibernate/JPA query tuning, hardening device commands with dual-layer <strong>OAuth 2.0 & mTLS</strong>, or leading Agile backend teams through end-to-end SDLC, I focus on clean code, automated testing (TDD), and zero-downtime reliability.
+              </p>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div>
+                  <h4>IoT & Telemetry Ingestion</h4>
+                  <p>Scalable VerneMQ MQTT brokers & AWS IoT Core handling 500k+ concurrent connected devices.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                <div>
+                  <h4>Event Streaming & Analytics</h4>
+                  <p>AWS Kinesis, Firehose, Kafka MSK, S3, Glue & Athena for petabyte-scale sub-second queries.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-lock"></i></div>
+                <div>
+                  <h4>Security & Auth Frameworks</h4>
+                  <p>mTLS device certificates, Spring Security, OAuth 2.0, JWT, and AWS IAM role policies.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <div>
+                  <h4>Team Leadership & Quality</h4>
+                  <p>Mentoring engineers, driving 85%+ code coverage with JUnit 5/Mockito, and Agile SDLC delivery.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Info / Location / Education / Awards Card -->
+          <div class="sidebar-cards">
+            <div class="info-card">
+              <h3 class="card-heading"><i class="fa-solid fa-id-card"></i> Quick Overview</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-key">Role:</span>
+                  <span class="info-val">Senior Java Backend Engineer</span>
+                </li>
+                <li>
+                  <span class="info-key">Experience:</span>
+                  <span class="info-val">3.7+ Years</span>
+                </li>
+                <li>
+                  <span class="info-key">Location:</span>
+                  <span class="info-val"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                </li>
+                <li>
+                  <span class="info-key">Education:</span>
+                  <span class="info-val">B.Tech in Computer Science</span>
+                </li>
+                <li>
+                  <span class="info-key">University:</span>
+                  <span class="info-val">APJ Abdul Kalam Tech Univ (CGPA 7.77)</span>
+                </li>
+                <li>
+                  <span class="info-key">Email:</span>
+                  <span class="info-val copyable" id="copy-email-btn" title="Click to copy">
+                    <span>Anandhuanilk21@gmail.com</span>
+                    <i class="fa-regular fa-copy"></i>
+                  </span>
+                </li>
+                <li>
+                  <span class="info-key">GitHub:</span>
+                  <a href="https://github.com/GttxAnan" target="_blank" class="info-val link">github.com/GttxAnan</a>
+                </li>
+                <li>
+                  <span class="info-key">LinkedIn:</span>
+                  <a href="https://linkedin.com/in/anandhu-anil" target="_blank" class="info-val link">in/anandhu-anil</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="info-card awards-card">
+              <h3 class="card-heading"><i class="fa-solid fa-award"></i> Honors & Recognition</h3>
+              <div class="award-pill-list">
+                <div class="award-pill">
+                  <i class="fa-solid fa-medal"></i>
+                  <div>
+                    <strong>Extra-Mile Award (2025)</strong>
+                    <span>Tata Elxsi · Exceptional engineering delivery</span>
+                  </div>
+                </div>
+                <div class="award-pill">
+                  <i class="fa-solid fa-trophy"></i>
+                  <div>
+                    <strong>Bright Spot Award (2025)</strong>
+                    <span>Tata Elxsi · High-impact backend innovation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="section bg-alt" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">02. TECHNICAL SKILLS</div>
+          <h2 class="section-title">Battle-Tested Backend & Cloud Tech Stack</h2>
+          <p class="section-subtitle">Categorized breakdown of frameworks, databases, cloud services, and protocols I work with in production daily.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="backend">Languages & Frameworks</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & Streaming</button>
+          <button class="filter-btn" data-filter="databases">Databases & Caching</button>
+          <button class="filter-btn" data-filter="security">Security & Observability</button>
+          <button class="filter-btn" data-filter="devops">DevOps, Testing & AI</button>
+        </div>
+
+        <div class="skills-matrix">
+          <!-- Languages & Frameworks -->
+          <div class="skill-category" data-cat="backend">
+            <div class="cat-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Languages & Core Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-brands fa-java"></i> Java (8/11/17/21)</div>
+              <div class="skill-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</div>
+              <div class="skill-badge"><i class="fa-solid fa-cloud"></i> Spring Cloud</div>
+              <div class="skill-badge"><i class="fa-solid fa-shield"></i> Spring Security</div>
+              <div class="skill-badge"><i class="fa-solid fa-database"></i> Hibernate / JPA</div>
+              <div class="skill-badge"><i class="fa-brands fa-python"></i> Python (Boto3)</div>
+              <div class="skill-badge"><i class="fa-solid fa-network-wired"></i> RESTful APIs</div>
+              <div class="skill-badge"><i class="fa-solid fa-cube"></i> Protobuf Serialization</div>
+              <div class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</div>
+            </div>
+          </div>
+
+          <!-- Cloud & Streaming -->
+          <div class="skill-category" data-cat="cloud">
+            <div class="cat-header">
+              <i class="fa-brands fa-aws"></i>
+              <h3>Cloud & Data Streaming</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-brands fa-aws"></i> AWS IoT Core</div>
+              <div class="skill-badge"><i class="fa-solid fa-microchip"></i> AWS Lambda (Serverless)</div>
+              <div class="skill-badge"><i class="fa-solid fa-water"></i> Amazon Kinesis & Firehose</div>
+              <div class="skill-badge"><i class="fa-solid fa-box-archive"></i> Amazon S3</div>
+              <div class="skill-badge"><i class="fa-solid fa-gears"></i> AWS Glue (ETL)</div>
+              <div class="skill-badge"><i class="fa-solid fa-magnifying-glass-chart"></i> Amazon Athena</div>
+              <div class="skill-badge"><i class="fa-solid fa-route"></i> Apache Kafka / AWS MSK</div>
+              <div class="skill-badge"><i class="fa-solid fa-tower-broadcast"></i> MQTT (VerneMQ)</div>
+              <div class="skill-badge"><i class="fa-solid fa-cloud-arrow-up"></i> Event-Driven Architecture</div>
+            </div>
+          </div>
+
+          <!-- Databases & Caching -->
+          <div class="skill-category" data-cat="databases">
+            <div class="cat-header">
+              <i class="fa-solid fa-database"></i>
+              <h3>Databases & Caching</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-solid fa-database"></i> MySQL</div>
+              <div class="skill-badge"><i class="fa-solid fa-table-cells"></i> Amazon DynamoDB</div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i> Cassandra</div>
+              <div class="skill-badge"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+              <div class="skill-badge"><i class="fa-solid fa-bolt"></i> Redis Caching</div>
+              <div class="skill-badge"><i class="fa-solid fa-bolt-lightning"></i> Supabase / PostgreSQL</div>
+              <div class="skill-badge"><i class="fa-solid fa-arrow-down-up-across-line"></i> Query Optimization</div>
+              <div class="skill-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i> Indexing & Partitioning</div>
+            </div>
+          </div>
+
+          <!-- Security & Observability -->
+          <div class="skill-category" data-cat="security">
+            <div class="cat-header">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Security, Identity & Observability</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-solid fa-key"></i> OAuth 2.0</div>
+              <div class="skill-badge"><i class="fa-solid fa-passport"></i> JWT Authentication</div>
+              <div class="skill-badge"><i class="fa-solid fa-certificate"></i> Mutual TLS (mTLS)</div>
+              <div class="skill-badge"><i class="fa-solid fa-user-shield"></i> AWS IAM Policies</div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-line"></i> Prometheus Metrics</div>
+              <div class="skill-badge"><i class="fa-solid fa-gauge-high"></i> Grafana Dashboards</div>
+              <div class="skill-badge"><i class="fa-solid fa-eye"></i> AWS CloudWatch & Alarms</div>
+              <div class="skill-badge"><i class="fa-solid fa-list-check"></i> Structured JSON Logging</div>
+            </div>
+          </div>
+
+          <!-- Testing, DevOps & AI Tools -->
+          <div class="skill-category" data-cat="devops">
+            <div class="cat-header">
+              <i class="fa-solid fa-vial-circle-check"></i>
+              <h3>Testing, DevOps & AI Tooling</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-solid fa-vial"></i> JUnit 5</div>
+              <div class="skill-badge"><i class="fa-solid fa-flask"></i> Mockito</div>
+              <div class="skill-badge"><i class="fa-solid fa-check-double"></i> Test-Driven Dev (TDD)</div>
+              <div class="skill-badge"><i class="fa-solid fa-feather"></i> Apache Maven</div>
+              <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+              <div class="skill-badge"><i class="fa-brands fa-jira"></i> Jira & Agile / Scrum</div>
+              <div class="skill-badge"><i class="fa-solid fa-cube"></i> SOLID Principles</div>
+              <div class="skill-badge"><i class="fa-solid fa-robot"></i> GitHub Copilot, Claude Code, Cursor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">03. CAREER JOURNEY</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Track record of designing, scaling, and maintaining enterprise backend architectures.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Role 1: Senior Engineer -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div>
+                <div class="role-badge">Current Role</div>
+                <h3 class="role-title">Senior Engineer</h3>
+                <h4 class="company-title"><i class="fa-regular fa-building"></i> Tata Elxsi</h4>
+              </div>
+              <div class="timeline-period">
+                <i class="fa-regular fa-calendar"></i> March 2025 – Present · Bengaluru, India
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <ul class="exp-bullets">
+                <li>
+                  <strong>Distributed Vehicle Telemetry:</strong> Consolidated and analysed vehicle telemetry datasets from disparate external sources to surface real-time fleet health metrics and operational KPIs via automated publishing pipelines across distributed systems.
+                </li>
+                <li>
+                  <strong>Protobuf Decoding & High-Throughput Pipelines:</strong> Architected Protobuf decoding logic in Java and AWS Lambda, streamlining data serialisation and eliminating processing overhead for high-throughput messaging pipelines.
+                </li>
+                <li>
+                  <strong>Near-Real-Time Analytics & Latency Reduction:</strong> Reduced data latency through pipeline optimisations, enabling near-real-time queries on fleet telemetry via AWS Athena with 100% data synchronisation for fleet monitoring.
+                </li>
+                <li>
+                  <strong>Proactive Observability & Alerting:</strong> Implemented end-to-end observability using Grafana dashboards and Prometheus metrics, enabling proactive alerting and reducing mean time to resolution (MTTR) by <strong>35%</strong>.
+                </li>
+                <li>
+                  <strong>Vehicle Fleet Command Framework:</strong> Engineered a secure device command framework achieving high delivery reliability across a distributed vehicle fleet.
+                </li>
+                <li>
+                  <strong>Team Leadership & Agile SDLC:</strong> Spearheaded a backend team of 5, directing SDLC from architectural design through production deployment, improving team velocity via Agile/Scrum practices.
+                </li>
+              </ul>
+
+              <div class="exp-tech-tags">
+                <span>Java</span>
+                <span>AWS Lambda</span>
+                <span>Protobuf</span>
+                <span>AWS Athena</span>
+                <span>AWS Kinesis</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>IoT Telemetry</span>
+                <span>Agile Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Engineer -->
+          <div class="timeline-card">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Engineer</h3>
+                <h4 class="company-title"><i class="fa-regular fa-building"></i> Tata Elxsi</h4>
+              </div>
+              <div class="timeline-period">
+                <i class="fa-regular fa-calendar"></i> Feb 2023 – March 2025 · Bengaluru, India
+              </div>
+            </div>
+
+            <div class="timeline-body">
+              <ul class="exp-bullets">
+                <li>
+                  <strong>Hibernate/JPA Optimization:</strong> Designed and maintained Hibernate / JPA entity mappings and query optimisations, reducing database round-trips and cutting average API response time.
+                </li>
+                <li>
+                  <strong>Spring Boot & OAuth2 / JWT Auth:</strong> Built RESTful APIs using Spring Boot with Maven; implemented OAuth 2.0 / JWT-based authentication via Spring Security, eliminating unauthorised access incidents post-deployment.
+                </li>
+                <li>
+                  <strong>85%+ TDD Test Coverage:</strong> Achieved 85%+ unit test coverage across core services using JUnit 5 and Mockito, reducing post-deployment production defects and enforcing TDD practices across the team.
+                </li>
+                <li>
+                  <strong>IoT Ingestion Layer (500k+ Connections):</strong> Engineered a secure MQTT-based IoT data ingestion layer with mTLS authentication, enabling reliable telemetry transfer at <strong>500,000+ concurrent device connections</strong> via VerneMQ and AWS IoT Core.
+                </li>
+                <li>
+                  <strong>AWS-Native Data Migration:</strong> Delivered an AWS-native data platform migration using IoT Core, Lambda, and Kinesis — cutting telemetry processing latency and enabling scalable analytics via Glue and Athena.
+                </li>
+                <li>
+                  <strong>CloudWatch Alarms & Structured Logging:</strong> Integrated AWS CloudWatch alarms and structured logging for backend services, reducing undetected failures and improving system observability.
+                </li>
+              </ul>
+
+              <div class="exp-tech-tags">
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>OAuth 2.0 / JWT</span>
+                <span>mTLS</span>
+                <span>MQTT / VerneMQ</span>
+                <span>AWS IoT Core</span>
+                <span>Hibernate / JPA</span>
+                <span>JUnit 5 / Mockito</span>
+                <span>CloudWatch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section bg-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">04. FEATURED PROJECTS & CODE</div>
+          <h2 class="section-title">Production Systems & Open Source Work</h2>
+          <p class="section-subtitle">Architectural implementations, enterprise pipelines, and open-source GitHub repositories.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Big Data Telemetry Pipeline -->
+          <div class="project-card featured">
+            <div class="project-banner">
+              <div class="project-type"><i class="fa-solid fa-server"></i> Enterprise Architecture</div>
+              <div class="project-badge-highlight">High Throughput</div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">Big Data Telemetry Analytics Pipeline</h3>
+              <p class="project-desc">
+                Designed and delivered an end-to-end telemetry data pipeline processing <strong>millions of vehicle events daily</strong>. Built interactive Grafana dashboards surfacing real-time fleet KPIs, reducing manual reporting effort by <strong>60%</strong> and enabling sub-second analytical queries on petabyte-scale S3 data via Athena.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="p-stat">
+                  <span class="stat-v">Millions</span>
+                  <span class="stat-k">Daily Vehicle Events</span>
+                </div>
+                <div class="p-stat">
+                  <span class="stat-v">&lt; 1s</span>
+                  <span class="stat-k">Query Latency</span>
+                </div>
+                <div class="p-stat">
+                  <span class="stat-v">-60%</span>
+                  <span class="stat-k">Manual Reporting</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">AWS Kinesis</span>
+                <span class="tech-tag">AWS Firehose</span>
+                <span class="tech-tag">Amazon S3</span>
+                <span class="tech-tag">AWS Glue</span>
+                <span class="tech-tag">Amazon Athena</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">Protobuf</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: IoT Device Command & Security Framework -->
+          <div class="project-card featured">
+            <div class="project-banner">
+              <div class="project-type"><i class="fa-solid fa-shield-cat"></i> IoT & Security System</div>
+              <div class="project-badge-highlight">99.9% Reliability</div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">IoT Device Command & Security Framework</h3>
+              <p class="project-desc">
+                Engineered a bidirectional device command framework with <strong>OAuth 2.0 and mTLS dual-layer security</strong>, thoroughly validated via JUnit 5 integration tests. Achieved <strong>99.9% command delivery reliability</strong> across a fleet of <strong>10,000+ connected vehicles</strong> with automated rollback on failure.
+              </p>
+
+              <div class="project-highlights-box">
+                <div class="p-stat">
+                  <span class="stat-v">10,000+</span>
+                  <span class="stat-k">Connected Fleet</span>
+                </div>
+                <div class="p-stat">
+                  <span class="stat-v">99.9%</span>
+                  <span class="stat-k">Delivery Reliability</span>
+                </div>
+                <div class="p-stat">
+                  <span class="stat-v">Dual-Layer</span>
+                  <span class="stat-k">mTLS & OAuth 2.0</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">AWS IoT Shadows</span>
+                <span class="tech-tag">mTLS</span>
+                <span class="tech-tag">OAuth 2.0</span>
+                <span class="tech-tag">Spring Security</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">JUnit 5</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Audiobook Creator (PDF to Audio) (Gttx) -->
+          <div class="project-card">
+            <div class="project-banner">
+              <div class="project-type"><i class="fa-solid fa-headphones"></i> Full-Stack App & Speech Engine</div>
+              <div class="project-links">
+                <a href="https://github.com/GttxAnan/Gttx" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://gttx.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Application">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="https://github.com/GttxAnan/Gttx" target="_blank" class="title-link">Audiobook Creator (PDF to Audio)</a>
+              </h3>
+              <p class="project-desc">
+                Full-stack web application converting PDFs and multi-format documents to natural voice audiobooks using EdgeTTS speech synthesis. Backed by Supabase database and seamlessly deployed on Vercel with document ingestion pipelines.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">EdgeTTS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Vercel</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://gttx.vercel.app" target="_blank" class="card-action-btn primary">
+                  <i class="fa-solid fa-play"></i> Live Demo
+                </a>
+                <a href="https://github.com/GttxAnan/Gttx" target="_blank" class="card-action-btn secondary">
+                  <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: BruxGuard -->
+          <div class="project-card">
+            <div class="project-banner">
+              <div class="project-type"><i class="fa-solid fa-heart-pulse"></i> Telemetry & Sensor Tracking</div>
+              <div class="project-links">
+                <a href="https://github.com/GttxAnan/BruxGuard" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="https://github.com/GttxAnan/BruxGuard" target="_blank" class="title-link">BruxGuard</a>
+              </h3>
+              <p class="project-desc">
+                Health & telemetry tracking application designed for monitoring bio-sensor data streams and habit tracking. Focuses on clean data ingestion, state management, and real-time activity metrics.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">IoT / Sensors</span>
+                <span class="tech-tag">Data Ingestion</span>
+                <span class="tech-tag">Telemetry</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/GttxAnan/BruxGuard" target="_blank" class="card-action-btn secondary full-width">
+                  <i class="fa-brands fa-github"></i> View GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Profile Callout -->
+        <div class="github-profile-banner">
+          <div class="gh-info">
+            <i class="fa-brands fa-github gh-large-icon"></i>
+            <div>
+              <h3>Explore more code & repositories on GitHub</h3>
+              <p>Check out my open-source commits, utility libraries, and active experiments at <strong>github.com/GttxAnan</strong>.</p>
+            </div>
+          </div>
+          <a href="https://github.com/GttxAnan" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>Visit @GttxAnan</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Backend Terminal Section -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">05. INTERACTIVE CLI</div>
+          <h2 class="section-title">Backend Engineer CLI & System Inspector</h2>
+          <p class="section-subtitle">Interact directly with this live terminal emulator to inspect skills, run healthchecks, or view system stats.</p>
+        </div>
+
+        <div class="terminal-wrapper">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-tab">
+                <i class="fa-solid fa-terminal"></i> anandhu@backend-node-01: ~ (zsh)
+              </div>
+              <div class="terminal-quick-help">Type <code>help</code> for commands</div>
+            </div>
+
+            <div class="terminal-screen" id="terminal-screen">
+              <div class="term-line output">
+                <span class="term-welcome">=== Anandhu Anil | Java Backend CLI v2.4.0-RELEASE ===</span>
+              </div>
+              <div class="term-line output">
+                Type <span class="term-cmd">help</span> to view available commands, or click the quick action chips below.
+              </div>
+              <div class="term-line output">
+                JVM: OpenJDK 21-ea | Uptime: 99.98% | Status: <span class="term-success">OPERATIONAL</span>
+              </div>
+              <div class="term-spacer"></div>
+              <!-- Output history will be appended here -->
+              <div id="terminal-history"></div>
+
+              <!-- Current Input Line -->
+              <div class="term-input-line">
+                <span class="term-prompt">anandhu@prod-cluster:~$</span>
+                <input type="text" id="terminal-input" class="term-input" autocomplete="off" spellcheck="false" placeholder="type a command...">
+              </div>
+            </div>
+
+            <div class="terminal-chips">
+              <span class="chip-label">Quick Commands:</span>
+              <button class="term-chip" data-cmd="skills">skills</button>
+              <button class="term-chip" data-cmd="metrics">metrics</button>
+              <button class="term-chip" data-cmd="projects">projects</button>
+              <button class="term-chip" data-cmd="experience">experience</button>
+              <button class="term-chip" data-cmd="curl -I /health">curl -I /health</button>
+              <button class="term-chip" data-cmd="sudo hire">sudo hire</button>
+              <button class="term-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section class="section bg-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">06. GET IN TOUCH</div>
+          <h2 class="section-title">Let's Build Something High-Scale Together</h2>
+          <p class="section-subtitle">Interested in discussing distributed systems, microservices, IoT architectures, or full-time opportunities? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card primary-contact">
+            <h3 class="contact-title"><i class="fa-solid fa-envelope-open-text"></i> Direct Contact Channels</h3>
+            
+            <div class="contact-methods">
+              <a href="mailto:Anandhuanilk21@gmail.com" class="contact-method-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Email</span>
+                  <span class="c-val">Anandhuanilk21@gmail.com</span>
+                </div>
+                <span class="c-badge">Send Mail</span>
+              </a>
+
+              <a href="tel:+918943960925" class="contact-method-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="c-details">
+                  <span class="c-label">Phone / WhatsApp</span>
+                  <span class="c-val">+91-8943960925</span>
+                </div>
+                <span class="c-badge">Call / Text</span>
+              </a>
+
+              <a href="https://linkedin.com/in/anandhu-anil" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="c-details">
+                  <span class="c-label">LinkedIn</span>
+                  <span class="c-val">linkedin.com/in/anandhu-anil</span>
+                </div>
+                <span class="c-badge">Connect <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+
+              <a href="https://github.com/GttxAnan" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="c-details">
+                  <span class="c-label">GitHub</span>
+                  <span class="c-val">github.com/GttxAnan</span>
+                </div>
+                <span class="c-badge">Follow <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+            </div>
+
+            <div class="location-banner">
+              <i class="fa-solid fa-map-pin"></i>
+              <span>Based in <strong>Bengaluru, Karnataka, India</strong> (Open to Remote & Relocation)</span>
+            </div>
+          </div>
+
+          <!-- Quick Message Box -->
+          <div class="contact-card message-box">
+            <h3 class="contact-title"><i class="fa-solid fa-paper-plane"></i> Quick Message</h3>
+            <form id="contact-form" class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" required placeholder="e.g. Alex Smith">
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" required placeholder="alex@company.com">
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" required placeholder="Discussing Backend Role / Project">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="4" required placeholder="Hi Anandhu, I'd love to chat about..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">
+                <span>Send via Mail Client</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">&lt;Anandhu.dev/&gt;</span>
+        <p>Crafted for scale, performance, and clean microservice engineering.</p>
+      </div>
+
+      <div class="footer-center">
+        <p>© 2026 Anandhu Anil. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="https://github.com/GttxAnan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/anandhu-anil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:Anandhuanilk21@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#hero" class="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
