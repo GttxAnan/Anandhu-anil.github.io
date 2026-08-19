@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTerminal();
   initCopyButtons();
   initScrollSpy();
+  initResumeLink();
 });
 
 /* ==========================================================================
@@ -391,4 +392,25 @@ function handleFormSubmit(e) {
 
   window.location.href = mailtoUrl;
   showToast('Opening default mail client...');
+}
+
+/* ==========================================================================
+   9. OBFUSCATED RESUME DOWNLOAD HANDLER
+   ========================================================================== */
+function initResumeLink() {
+  const resumeBtn = document.getElementById('resume-btn');
+  if (!resumeBtn) return;
+
+  // Base64 encoded Google Drive URL to prevent raw URL indexing in public repo scrapers
+  const encodedUrl = 'aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xY29TRmtUSDlyX1k0SFIxSm50SjNaSkNuVnVqSGxBM2Yvdmlldz91c3A9c2hhcmluZw==';
+
+  resumeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    try {
+      const targetUrl = atob(encodedUrl);
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
+    } catch (err) {
+      console.error('Failed to open resume link:', err);
+    }
+  });
 }
